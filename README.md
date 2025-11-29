@@ -1,16 +1,14 @@
 ## Hi there 👋
 
-<!--
-**leonbora167/leonbora167** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 📊 Overview
+![GitHub Metrics](./metrics.svg)
 
-Here are some ideas to get you started:
+### 💻 ⏰
+| Languages | WakaTime |
+|----------|----------|
+| ![Languages](./languages.svg) | ![WakaTime](./wakatime.svg) |
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🎮  |     📆 
+| Steam | Isocalendar |
+|-------|-------------|
+| ![Steam](./steam.svg) | ![Isocalendar](./isocalendar.svg) |
