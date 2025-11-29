@@ -1,0 +1,29 @@
+name: Generate GitHub Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"    # runs once a day (UTC)
+  workflow_dispatch:        # allow manual run from Actions tab
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # so it can push the generated SVG
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest    # Fresh Metrics is a fork of this
+        with:
+          filename: metrics.svg            # output file in repo root
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: leonbora167       # <- change this
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          
+          #Coding habits and activity
+          plugin_habits: yes 
+          plugin_habits_from: 200 
+          plugin_habits_days: 14 
+          plugin_habits_charts: yes
+          plubin_habits_trim: yes
