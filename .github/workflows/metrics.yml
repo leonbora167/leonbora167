@@ -2,28 +2,105 @@ name: Generate GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * *"    # runs once a day (UTC)
-  workflow_dispatch:        # allow manual run from Actions tab
+    - cron: "0 0 * * *"    # runs daily
+  workflow_dispatch:
 
 jobs:
-  github-metrics:
+  coding-habits:
     runs-on: ubuntu-latest
     permissions:
-      contents: write       # so it can push the generated SVG
+      contents: write
     steps:
-      - name: Generate metrics
-        uses: lowlighter/metrics@latest    # Fresh Metrics is a fork of this
+      - name: Coding habits infographic
+        uses: lowlighter/metrics@latest
         with:
-          filename: metrics.svg            # output file in repo root
           token: ${{ secrets.METRICS_TOKEN }}
-          user: leonbora167       # <- change this
+          user: leonbora167
+          filename: habits.svg      # 👈 Separate file
           template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Kolkata
-          
-          #Coding habits and activity
-          plugin_habits: yes 
-          plugin_habits_from: 200 
-          plugin_habits_days: 14 
+          base: ""
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
           plugin_habits_charts: yes
           plugin_habits_trim: yes
+          config_timezone: Asia/Kolkata
+
+  wakatime:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: WakaTime infographic
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: wakatime.svg   # 👈 Separate file
+          template: classic
+          base: ""
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+          plugin_wakatime_days: 7
+          plugin_wakatime_sections: time, projects, projects-graphs
+          plugin_wakatime_limit: 4
+          config_timezone: Asia/Kolkata
+
+  anilist:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: AniList infographic
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: anilist.svg     # 👈 Separate file
+          template: classic
+          base: ""
+          plugin_anilist: yes
+          plugin_anilist_user: R0bin1
+          plugin_anilist_medias: anime, manga
+          plugin_anilist_sections: watching, reading
+          plugin_anilist_limit: 6
+          config_timezone: Asia/Kolkata
+          
+  skyline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Skyline infographic
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: leonbora167
+          filename: skyline.svg
+          base: ""                       # just the skyline
+
+          # 🏙 GitHub Skyline
+          plugin_skyline: yes
+          plugin_skyline_year: 2025      # 👈 change to whatever year you want
+          plugin_skyline_frames: 6       # smooth-ish animation
+          plugin_skyline_quality: 1      # higher = better quality, larger file  
+          
+  languages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Languages infographic
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: leonbora167
+          filename: languages.svg
+          template: classic
+          base: ""                       # only the plugin output
+
+          # Most-used languages
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
+          # optional: hide noisy languages
+          plugin_languages_ignored: >-
+            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
