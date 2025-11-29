@@ -16,7 +16,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: leonbora167
-          filename: habits.svg      # 👈 Separate file
+          filename: habits.svg      
           template: classic
           base: ""
           plugin_habits: yes
@@ -35,7 +35,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: wakatime.svg   # 👈 Separate file
+          filename: wakatime.svg   
           template: classic
           base: ""
           plugin_wakatime: yes
@@ -54,7 +54,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: anilist.svg     # 👈 Separate file
+          filename: anilist.svg     
           template: classic
           base: ""
           plugin_anilist: yes
@@ -64,24 +64,22 @@ jobs:
           plugin_anilist_limit: 6
           config_timezone: Asia/Kolkata
           
-  skyline:
+  isocalendar:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+        contents: write
     steps:
-      - name: Skyline infographic
-        uses: lowlighter/metrics@latest
+      - name: Isocalendar infographic
+        uses: lowlighter/metrics@latest    # or wesleyscholl/metrics@v1.4 if you switch
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: leonbora167
-          filename: skyline.svg
-          base: ""                       # just the skyline
-
-          # 🏙 GitHub Skyline
-          plugin_skyline: yes
-          plugin_skyline_year: 2025      # 👈 change to whatever year you want
-          plugin_skyline_frames: 6       # smooth-ish animation
-          plugin_skyline_quality: 1      # higher = better quality, larger file  
+          filename: isocalendar.svg
+          template: classic
+          base: ""                 # only plugin output
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year   # or half-year / quarter
+ 
           
   languages:
     runs-on: ubuntu-latest
@@ -104,3 +102,29 @@ jobs:
           # optional: hide noisy languages
           plugin_languages_ignored: >-
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
+            
+  steam:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Steam infographic
+        uses: lowlighter/metrics@latest    # Or wesleyscholl/metrics@v1.4 if you switch
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: steam.svg
+          base: ""                         # Only plugin content
+          template: classic
+          config_timezone: Asia/Kolkata
+
+          # 🎮 Steam Plugin
+          plugin_steam: yes
+          plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
+          plugin_steam_user: "76561198199565857"  # <-- Replace with your SteamID64
+          plugin_steam_games_ignored: ""         # Optional
+          plugin_steam_games_limit: 2            # Number of games shown
+          plugin_steam_sections: most-played,recently-played
+          plugin_steam_profilestatus: yes        # Show profile status
+          plugin_steam_achievements_limit: 3
+          plugin_steam_recent_games_limit: 3
+  
