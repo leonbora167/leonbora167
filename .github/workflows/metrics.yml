@@ -127,4 +127,26 @@ jobs:
           plugin_steam_profilestatus: yes        # Show profile status
           plugin_steam_achievements_limit: 3
           plugin_steam_recent_games_limit: 3
+          
+  leetcode:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: LeetCode infographic
+        uses: lowlighter/metrics@latest    # or wesleyscholl/metrics@v1.4 if you switched
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: leetcode.svg           # new SVG file
+          base: ""                         # only LeetCode content
+          template: classic
+          config_timezone: Asia/Kolkata
+
+          # 🧠 LeetCode plugin
+          plugin_leetcode: yes
+          plugin_leetcode_user: leonbora167   # <- change this
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_limit_skills: 10
+          plugin_leetcode_limit_recent: 5
+
   
