@@ -138,7 +138,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/>
                                         </svg>
-                                        8 hours played
+                                        10 hours played
                                     </div>
                                 </div>
                                 <div class="infos">
@@ -146,7 +146,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 0 1 4.75 0ZM2.5 7.5v6.75c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V7.5Zm10.75-4H2.75a.25.25 0 0 0-.25.25V6h11V3.75a.25.25 0 0 0-.25-.25Z"/>
                                         </svg>
-                                        Last played on 11 Dec 2025
+                                        Last played on 20 Dec 2025
                                     </div>
                                 </div>
                                 <div class="achievements">
@@ -155,7 +155,27 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                                 <path d="M3.217 6.962A3.75 3.75 0 0 1 0 3.25v-.5C0 1.784.784 1 1.75 1h1.356c.228-.585.796-1 1.462-1h6.864c.647 0 1.227.397 1.462 1h1.356c.966 0 1.75.784 1.75 1.75v.5a3.75 3.75 0 0 1-3.217 3.712 5.014 5.014 0 0 1-2.771 3.117l.144 1.446c.005.05.03.12.114.204.086.087.217.17.373.227.283.103.618.274.89.568.285.31.467.723.467 1.226v.75h1.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H4v-.75c0-.503.182-.916.468-1.226.27-.294.606-.465.889-.568.139-.048.266-.126.373-.227.084-.085.109-.153.114-.204l.144-1.446a5.015 5.015 0 0 1-2.77-3.117ZM4.5 1.568V5.5a3.5 3.5 0 1 0 7 0V1.568a.068.068 0 0 0-.068-.068H4.568a.068.068 0 0 0-.068.068Zm2.957 8.902-.12 1.204c-.093.925-.858 1.47-1.467 1.691a.766.766 0 0 0-.3.176c-.037.04-.07.093-.07.21v.75h5v-.75c0-.117-.033-.17-.07-.21a.766.766 0 0 0-.3-.176c-.609-.221-1.374-.766-1.466-1.69l-.12-1.204a5.064 5.064 0 0 1-1.087 0ZM13 2.5v2.872a2.25 2.25 0 0 0 1.5-2.122v-.5a.25.25 0 0 0-.25-.25H13Zm-10 0H1.75a.25.25 0 0 0-.25.25v.5c0 .98.626 1.813 1.5 2.122Z"/>
                                             </svg>
-                                            8 / 60 achievements unlocked
+                                            10 / 60 achievements unlocked
+                                        </div>
+                                    </div>
+                                    <div class="achievement">
+                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABwgEBQYJ/8QALRAAAQMDAwIEBQUAAAAAAAAAAQIDBQQGEQASIQcxEyJBUQgVMkJhgZGTocH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8ACF4XVNRNzykZDyFTHx1DUuU1PTUzhQhCEK2jt3Jxkk8kknV50jVc/UC70wqrvk6AFhx/xQtThO0Dygbhyc++sV1FTtvy4PzXPH91k6JnwgoCurK1KJHhxz6hgZPJQn/dAXD0LuMNEnqVLhzH0eEe/wDJpd7YuCckLupoKdkqquoap80dTTvuFaVAkpyAeygeQe4IGugAWpltkI83oPEBBHt/eud1plw9Vo4vDa581G4ex8Q50EXqI0ty/wCZbaSpa11atqUjJUTjgD9dHX4dLCnbRqqm6pFNEw+6wqjaoKqoLLoypBUpeEq2kYHlIzzzj1ysXKTELdNbO2zbdJMt1a0PsyWNykJKUApHOEKGFDBGcnkEADU+Ru27pFxC6yz6psB0LIpwBxjk5xneTgBR+kZIBVhSQYQXXdLzoDVtUNQEqBSWZlKRjnBIU2DzjtjjSirgq+3uudLRSrSUPmUS8koJKFoU4SFJJAyPTt6HRUtzqHccZHuJetCQbqHEbEhlSG22h28oPPAwfyc6pJy4q64ZuHlbkttmO+V1Iq3pBVYgFKADlvH3ZIRgDndkDvoP/9k=" alt="" />
+                                        <div>
+                                            <div class="name">
+                                                <div>Dark Room</div>
+                                                <div class="unlocked">20 Dec 2025</div>
+                                            </div>
+                                            <div class="description">Finish Episode 4: Dark Room</div>
+                                        </div>
+                                    </div>
+                                    <div class="achievement">
+                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAABAUDBgECB//EACwQAAICAQMEAQMCBwAAAAAAAAECAwQFBhESABMhMUEUIlEVYQcWJDJicoH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A45msxqX+dMhgNL2blWtUsyVq1SpJwRI4yRyPoel5M5/ck9O6kOpFxIyNvVufuVzK1ffDQvbQSgBipcsoOwIO67j8HrOQ09eytnWcWFeBL13J2BIZZRHzghKuYlY+N2eaPwSAeA6VPprVeHwOetY3Usf6Rguwx+muuvc7vFlaJB5APdP3EAHc+T66DT9S1BkFddOayyl65GCWoz869hgPfBeTByPlQeX4B6B0dqbM5nUtDE5nJW72OvyitPXsSF1ZW8b7H0wJ3B9ggdLdE5aCn9RTlwZy008kTxCFQs6cG5N25ApdSQPY9eT1Y6Sm5rvRuceIQ2MjZC2k22/qIpODtt+WHBj/AJFugm1C0uVy+q8BTlZL7Xmt1Y1bb6oEKJYf3YhY2A+THt7I6q2lcPY1Jk78F63eVq1Tk8UERmsTBCqLEqEjfb7fZ+0KT8dNdW6by+a1HayuCqS3qFnhPFYg2K+VXwfP2sDuCD5BHRXZ1w4U5PTkeVcAL3b1BJpSPwZP7z/0k9AC0GS0FqOk2AktNkr9NliSav27MBkZo+PBWbZyF8efTDx0yqWyv8Q9J4hrH1UuPuA2rHLn3bUsnOY8vkA7Jv8AJQn56jlr6zWJhjdNwYdpFKvLSqrFKwPsc2JZR/qRv0LozTOTwepsfls1VFbHUZRYnkkmReIXcgeySSdgABuT46D/2Q==" alt="" />
+                                        <div>
+                                            <div class="name">
+                                                <div>Manually Exposed</div>
+                                                <div class="unlocked">20 Dec 2025</div>
+                                            </div>
+                                            <div class="description">Take optional photo #8 in Episode 4: Dark Room</div>
                                         </div>
                                     </div>
                                     <div class="achievement">
@@ -169,28 +189,8 @@
                                         </div>
                                     </div>
                                     <div class="achievement">
-                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgcEBf/EACgQAAICAgEEAgIBBQAAAAAAAAECAwQFEQYAEiExBxMiQVEUFRZhYv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCV3M7nqnNc1h8Els4rFTSKtKlM0X1VoH/Nh2kbYop7mIJ8k9Gs1zzOf3e6cPyDNjGGZzVFiwfsEXcezv0dd2tb/wB9JrWZg4Z80w8iq31nkGVsPdrCNlMMZlZWQk+G7o2JBH86Prpn8kfGGEq5rlP+PPDaFuglqhDWX7jXsiVC8Z7ARGHQll7tDTEel6CccU5Hy/PLkadXK5B7EVZ7rW5LkirVhhVnkJA97/FRv96H760cNzWWzlyjWzmee/SyFwY+XG2JTIzo6ncuj4HaSva3vu9ej0v4ZSx/CvhnnLZ1npcmytc1YILEbIWh2o1GxHa5JZiQCSAo2OgvxNgbtnN08utCdqNS9WU3C4SJGMgHZoj82OxpVOx5J8dAtz3FeL51+QZObJWqWWxeQ7shAQGSeszBvsQ6HYwBK6JOyB/PRTNhb9aJM9nosLC0YlqYWvBJLHXiI2neF0FZho7O3O+5vfXf5dhchyLDXp8DC9urNfjvK0LKVnR4FQb8+GjZWBU+R9h8e+gknBuUk7bC3mJ/430G3gkeaSORhXyDcWst/T5KRKzzQJGR+TkAEd6A9wPsEDq5ZXkeIzeP4RVpWIKWNo2oFqU6ChortvYV33ofWka7YqyhyZR40Q3UPwnGeZ4fJVL9HGXYZ60glTZ7PIO9EbHg+j/PTXC4+xhYsTYyVaKvWhycmZvt9ixRVAFKpCmySx8egP2qjfnQf//Z" alt="" />
                                         <div>
-                                            <div class="name">
-                                                <div>Chaos Theory</div>
-                                                <div class="unlocked">16 Jan 2025</div>
-                                            </div>
-                                            <div class="description">Finish Episode 3: Chaos Theory</div>
-                                        </div>
-                                    </div>
-                                    <div class="achievement">
-                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABAUCBgcD/8QALRAAAQMDAwQAAwkAAAAAAAAAAQIDBAUGEQASIQcTFDEiQWEjJDJRUnKBwtH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Ayer1assXLdFMo9WlUqmUNL4jRoqilGxpxLaQcY5OclXsnOlllXZcdVu+iwJleqi4smY006nylpygqAVyDxxnRlXQRdvU5wekx31E/ulsj+2hrPoiKN1do1PlykBtpbL7j6xtSgKZDpJ+ic8n6aBGu+7p3HbcNTxnj7wr/dOLNuitVy5YFIrVSlT6bUHBFfjyHCtKkr4zg+lAkEH2CBoaJYj3mJbkTokiOuBMlJegPB5IWw0pfbKvWc9vOM8LHzyBx6e0+XG6g0kPx3WzFqTTL4UnHbXvI2q/I5SR/Ggu9VapsC67pplTkBMy5B47QSdvipUUutLcURjC3EtcfoJJI41O9obdO6h1255TrCaU1GKYXZkNrU+744ZbRtCsgZyScfhQojPGrhSukNCv2Y9dNTu+OIM4IW2xDcbDiBsSNriln4FDBG3Bxj3qdSsiwbQS9AhUetXQZLuJLnZC+yhLaylLTqdgBLvb3FOcpBGfkQzSFW59kXC9bdMYYegVOPDbkNPoKlKD7DRdCVAhSd+7nB+ScehrdaPYFPpV+V+c8sKRPqsh9mPMbG7cw045lsg8jLySDjI7Z9+9Oo0Dp/c8ONc1Wo7dOrcFlvbGdyw+ktFJbSAeFn7NKQecJO3VI6t3LNq3UmhVZpQj23SWW5Ml0yEICHdq+4lJByrhQRgD4iMD3oP/2Q==" alt="" />
-                                        <div>
-                                            <div class="name">
-                                                <div>Histogrammar</div>
-                                                <div class="unlocked">11 Jan 2025</div>
-                                            </div>
-                                            <div class="description">Take optional photo #4 in Episode 3: Chaos Theory</div>
-                                        </div>
-                                    </div>
-                                    <div class="achievement">
-                                        <div>
-                                            <div class="description ellipsis">+5 others...</div>
+                                            <div class="description ellipsis">+7 others...</div>
                                         </div>
                                     </div>
                                 </div>
