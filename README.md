@@ -8,7 +8,7 @@
 |----------|----------|
 | ![Languages](./languages.svg) | ![WakaTime](./wakatime.svg) |
 
-### 🎮  |     📆 
-| Steam | Isocalendar |
+### 🎯  |     📆 
+| Leetcode | Isocalendar |
 |-------|-------------|
-| ![Steam](./steam.svg) | ![Isocalendar](./isocalendar.svg) |
+| ![Leetcode](./leetcode.svg) | ![Isocalendar](./isocalendar.svg) |
