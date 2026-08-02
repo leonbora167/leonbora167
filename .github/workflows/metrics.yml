@@ -124,7 +124,6 @@ jobs:
           plugin_steam_games_ignored: ""         # Optional
           plugin_steam_games_limit: 2            # Number of games shown
           plugin_steam_sections: most-played,recently-played
-          plugin_steam_profilestatus: yes        # Show profile status
           plugin_steam_achievements_limit: 3
           plugin_steam_recent_games_limit: 3
           
