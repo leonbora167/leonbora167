@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  coding-habits:
+  metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -16,7 +16,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: leonbora167
-          filename: habits.svg      
+          filename: habits.svg
           template: classic
           base: ""
           plugin_habits: yes
@@ -26,16 +26,11 @@ jobs:
           plugin_habits_trim: yes
           config_timezone: Asia/Kolkata
 
-  wakatime:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
       - name: WakaTime infographic
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: wakatime.svg   
+          filename: wakatime.svg
           template: classic
           base: ""
           plugin_wakatime: yes
@@ -45,16 +40,11 @@ jobs:
           plugin_wakatime_limit: 4
           config_timezone: Asia/Kolkata
 
-  anilist:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
       - name: AniList infographic
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: anilist.svg     
+          filename: anilist.svg
           template: classic
           base: ""
           plugin_anilist: yes
@@ -63,12 +53,7 @@ jobs:
           plugin_anilist_sections: watching, reading
           plugin_anilist_limit: 6
           config_timezone: Asia/Kolkata
-          
-  isocalendar:
-    runs-on: ubuntu-latest
-    permissions:
-        contents: write
-    steps:
+
       - name: Isocalendar infographic
         uses: lowlighter/metrics@latest
         with:
@@ -79,13 +64,7 @@ jobs:
           base: ""                 # only plugin output
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year   # or half-year / quarter
- 
-          
-  languages:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
+
       - name: Languages infographic
         uses: lowlighter/metrics@latest
         with:
@@ -102,12 +81,7 @@ jobs:
           # optional: hide noisy languages
           plugin_languages_ignored: >-
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
-            
-  steam:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
+
       - name: Steam infographic
         uses: lowlighter/metrics@latest
         with:
@@ -126,12 +100,7 @@ jobs:
           plugin_steam_sections: most-played,recently-played
           plugin_steam_achievements_limit: 3
           plugin_steam_recent_games_limit: 3
-          
-  leetcode:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
+
       - name: LeetCode infographic
         uses: lowlighter/metrics@latest
         with:
@@ -148,11 +117,6 @@ jobs:
           plugin_leetcode_limit_skills: 10
           plugin_leetcode_limit_recent: 5
 
-  overview:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
       - name: General metrics infographic
         uses: lowlighter/metrics@latest
         with:
@@ -161,10 +125,10 @@ jobs:
           filename: metrics.svg
           template: classic
           config_timezone: Asia/Kolkata
-          
+
           # Base sections enabled (This gives you Joined, Followers, Activity, Repositories, etc.)
           base: header, activity, community, repositories, metadata
-          
+
           # Coding habits enabled (Renders the habits section at the bottom)
           plugin_habits: yes
           plugin_habits_from: 200
