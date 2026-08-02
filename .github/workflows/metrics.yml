@@ -12,7 +12,7 @@ jobs:
       contents: write
     steps:
       - name: Coding habits infographic
-        uses: wesleyscholl/metrics@v1.4
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: leonbora167
@@ -32,7 +32,7 @@ jobs:
       contents: write
     steps:
       - name: WakaTime infographic
-        uses:  wesleyscholl/metrics@v1.4
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: wakatime.svg   
@@ -51,7 +51,7 @@ jobs:
       contents: write
     steps:
       - name: AniList infographic
-        uses: wesleyscholl/metrics@v1.4
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: anilist.svg     
@@ -70,7 +70,7 @@ jobs:
         contents: write
     steps:
       - name: Isocalendar infographic
-        uses: wesleyscholl/metrics@v1.4    # or wesleyscholl/metrics@v1.4 if you switch
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: leonbora167
@@ -87,7 +87,7 @@ jobs:
       contents: write
     steps:
       - name: Languages infographic
-        uses: wesleyscholl/metrics@v1.4
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: leonbora167
@@ -109,7 +109,7 @@ jobs:
       contents: write
     steps:
       - name: Steam infographic
-        uses: wesleyscholl/metrics@v1.4t    # Or wesleyscholl/metrics@v1.4 if you switch
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: steam.svg
@@ -133,7 +133,7 @@ jobs:
       contents: write
     steps:
       - name: LeetCode infographic
-        uses: wesleyscholl/metrics@v1.4    # or wesleyscholl/metrics@v1.4 if you switched
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: leetcode.svg           # new SVG file
@@ -154,7 +154,7 @@ jobs:
       contents: write
     steps:
       - name: General metrics infographic
-        uses: wesleyscholl/metrics@v1.4
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: leonbora167
@@ -171,5 +171,3 @@ jobs:
           plugin_habits_days: 30
           plugin_habits_charts: yes
           plugin_habits_trim: yes
-
-  
