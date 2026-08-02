@@ -32,7 +32,7 @@ jobs:
       contents: write
     steps:
       - name: WakaTime infographic
-        uses: lowlighter/metrics@latest
+        uses:  wesleyscholl/metrics@v1.4
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: wakatime.svg   
@@ -51,7 +51,7 @@ jobs:
       contents: write
     steps:
       - name: AniList infographic
-        uses: lowlighter/metrics@latest
+        uses: wesleyscholl/metrics@v1.4
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: anilist.svg     
@@ -70,7 +70,7 @@ jobs:
         contents: write
     steps:
       - name: Isocalendar infographic
-        uses: lowlighter/metrics@latest    # or wesleyscholl/metrics@v1.4 if you switch
+        uses: wesleyscholl/metrics@v1.4    # or wesleyscholl/metrics@v1.4 if you switch
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: leonbora167
@@ -87,7 +87,7 @@ jobs:
       contents: write
     steps:
       - name: Languages infographic
-        uses: lowlighter/metrics@latest
+        uses: wesleyscholl/metrics@v1.4
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: leonbora167
@@ -109,7 +109,7 @@ jobs:
       contents: write
     steps:
       - name: Steam infographic
-        uses: lowlighter/metrics@latest    # Or wesleyscholl/metrics@v1.4 if you switch
+        uses: wesleyscholl/metrics@v1.4t    # Or wesleyscholl/metrics@v1.4 if you switch
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: steam.svg
@@ -133,7 +133,7 @@ jobs:
       contents: write
     steps:
       - name: LeetCode infographic
-        uses: lowlighter/metrics@latest    # or wesleyscholl/metrics@v1.4 if you switched
+        uses: wesleyscholl/metrics@v1.4    # or wesleyscholl/metrics@v1.4 if you switched
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: leetcode.svg           # new SVG file
@@ -147,5 +147,29 @@ jobs:
           plugin_leetcode_sections: solved, skills, recent
           plugin_leetcode_limit_skills: 10
           plugin_leetcode_limit_recent: 5
+
+  overview:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: General metrics infographic
+        uses: wesleyscholl/metrics@v1.4
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: leonbora167
+          filename: metrics.svg
+          template: classic
+          config_timezone: Asia/Kolkata
+          
+          # Base sections enabled (This gives you Joined, Followers, Activity, Repositories, etc.)
+          base: header, activity, community, repositories, metadata
+          
+          # Coding habits enabled (Renders the habits section at the bottom)
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 30
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes
 
   
