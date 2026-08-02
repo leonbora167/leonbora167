@@ -90,6 +90,7 @@ jobs:
           base: ""                         # Only plugin content
           template: classic
           config_timezone: Asia/Kolkata
+          debug: yes                       # verbose logs to diagnose why steam isn't rendering
 
           # 🎮 Steam Plugin
           plugin_steam: yes
